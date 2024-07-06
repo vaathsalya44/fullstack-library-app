@@ -26,7 +26,7 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
   console.log('DB Connected.')
 })
 .catch(err => {
-  console.log('Error Connecting to DB!')
+  console.log('Error Connecting to DB! ',err)
 })
 
 app.use('/', indexRouter)
