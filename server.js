@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV !== 'production') {
+if(process.env.NODE_ENV !== 'PRODUCTION') {
   require('dotenv').config()
 }
 
@@ -33,4 +33,4 @@ app.use('/', indexRouter)
 app.use('/authors', authorsRouter)
 app.use('/books', booksRouter)
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3001)
